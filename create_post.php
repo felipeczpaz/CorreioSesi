@@ -101,6 +101,14 @@ $mysqli->close();
     <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
       <form action="create_post.php" method="post">
         <h4>Conte sua fofoca</h4>
+        
+         <!-- PHP Conditional to display error message -->
+         <?php if (!empty($errorString)): ?>
+        <div class="mb-3 text-danger">
+          <?php echo $errorString; ?>
+        </div>
+      <?php endif; ?>
+      
         <div class="mb-3">
           <label for="postText" class="form-label">Publicar conteúdo:</label>
           <textarea class="form-control" id="postText" name="postText" rows="3" style="resize: none;" placeholder="Digite sua postagem aqui"></textarea>

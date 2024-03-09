@@ -106,7 +106,7 @@ if ($result) {
             <div class="card-body">
             <?php
                     $author_name = getUsernameById($mysqli, $post['author_id']);
-                    $card_title = $post['is_anonymous'] ? 'Anônimo' : $author_name;
+                    $card_title = $post['is_anonymous'] ? 'Anônimo' : '@' . $author_name;
                     ?>
                     <h5 class="card-title"><?= $card_title ?></h5>
                 <p class="card-text"><?= htmlspecialchars($post['post_content']) ?></p>
