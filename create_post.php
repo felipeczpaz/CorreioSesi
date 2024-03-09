@@ -12,6 +12,11 @@ $errorString = '';
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (!$is_logged_in) {
+    header('Location: register.php');
+    exit;
+  }
+
   require_once('connection.php');
 
     // Assuming you have form fields for post content and author_id
