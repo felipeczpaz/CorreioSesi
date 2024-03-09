@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS correio_sesi;
 USE correio_sesi;
 
 -- Create User table
-CREATE TABLE user (
+CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
@@ -18,8 +18,5 @@ CREATE TABLE posts (
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     is_anonymous BOOLEAN NOT NULL DEFAULT FALSE,
     post_content TEXT,
-    FOREIGN KEY (author_id) REFERENCES user(user_id)
+    FOREIGN KEY (author_id) REFERENCES users(user_id)
 );
-
--- Add index on author_id in posts table
-CREATE INDEX idx_author_id ON posts (author_id);
