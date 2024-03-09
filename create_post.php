@@ -99,7 +99,7 @@ $mysqli->close();
   <div class="row">
     <!-- Form Container -->
     <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
-      <form action="create_post.php" method="post">
+      <form action="create_post.php" method="post" class="border rounded shadow p-4">
         <h4>Conte sua fofoca</h4>
         
          <!-- PHP Conditional to display error message -->
@@ -117,7 +117,7 @@ $mysqli->close();
           <input type="checkbox" class="form-check-input" id="anonymousCheck" name="anonymousCheck">
           <label class="form-check-label" for="anonymousCheck">Anônimo</label>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Postar</button>
+        <button type="submit" class="btn btn-primary w-100">Postar</button>
       </form>
     </div>
   </div>

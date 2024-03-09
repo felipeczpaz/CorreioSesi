@@ -112,7 +112,7 @@ $mysqli->close();
 <!-- Main Container for Login Form -->
 <div class="container mt-5 pt-5">
   <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
-    <form action="login.php" method="post">
+    <form action="login.php" method="post" class="border rounded shadow p-4">
       <h4>Login</h4>
       
          <!-- PHP Conditional to display error message -->
@@ -130,7 +130,7 @@ $mysqli->close();
         <label for="password" class="form-label">Senha:</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Login</button>
+      <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
   </div>
 </div>

@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- Main Container for Registration Form -->
 <div class="container mt-5 pt-5">
   <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
-    <form action="register.php" method="post">
+    <form action="register.php" method="post" class="border rounded shadow p-4">
       <h4>Registre-se</h4>
 
          <!-- PHP Conditional to display error message -->
@@ -156,7 +156,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="confirmPassword" class="form-label">Confirme sua senha:</label>
         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Registre-se</button>
+      <button type="submit" class="btn btn-primary w-100">Registre-se</button>
     </form>
   </div>
 </div>

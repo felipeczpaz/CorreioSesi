@@ -76,7 +76,7 @@ if ($result) {
   <div class="row">
     <!-- Form Container -->
     <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
-      <form action="create_post.php" method="post">
+      <form action="create_post.php" method="post" class="border rounded shadow p-4">
         <h4>Conte sua fofoca</h4>
         <div class="mb-3">
           <label for="postText" class="form-label">Publicar conteúdo:</label>
@@ -86,23 +86,23 @@ if ($result) {
           <input type="checkbox" class="form-check-input" id="anonymousCheck" name="anonymousCheck">
           <label class="form-check-label" for="anonymousCheck">Anônimo</label>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Postar</button>
+        <button type="submit" class="btn btn-primary w-100">Postar</button>
       </form>
 
       <!-- Text below the form -->
       <div class="mt-3 text-center">Faça login para postar</div>
 
 <!-- Register and Login Buttons -->
-<div class="text-center">
+<div class="text-center mb-4">
   <a href="register.php" class="btn btn-primary mt-2">Registre-se</a>
   <a href="login.php" class="btn btn-outline-primary mt-2">Login</a>
 </div>
     </div>
     
     <!-- User Posts Container -->
-    <div class="col-lg-6 col-md-8 col-sm-12 mt-4">
+    <div class="col-lg-6 col-md-8 col-sm-12">
     <?php foreach ($posts as $post) : ?>
-        <div class="card mb-3">
+        <div class="card mb-4 shadow">
             <div class="card-body">
             <?php
                     $author_name = getUsernameById($mysqli, $post['author_id']);

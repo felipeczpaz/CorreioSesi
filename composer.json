@@ -1,0 +1,17 @@
+{
+    "name": "felipeczpaz/correio-sesi",
+    "autoload": {
+        "psr-4": {
+            "Felipeczpaz\\CorreioSesi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Cezar Paz",
+            "email": "felipecezarpazzz@proton.me"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
