@@ -1,22 +1,53 @@
-# CorreioSesi
-CorreioSesi.com Social Network in PHP.
+# Correio Sesi
 
-Foda-se essa merda
+Correio Sesi is a social network platform inspired by the likes of Twitter and Facebook, tailored for the community of @sesisenaipr.org.br users. It provides a space for communication, updates, and social interaction within the Sesi Senai PR network.
 
-Tive a ideia de desenvolver isso em 2022 no segundo ano do Ensino Médio; Resolvendo um problema que todos tinham: O administrador da página de fofocas Correio Sesi provavelmente trabalhava e não postava com frequência as coisas que a gente mandava.
+## Features
 
-Então tive a brilhante ideia de fazer uma rede social estilo Twitter/(now X) que precisasse de um email @sesisenaipr.org.br e que fosse válido.
+- **User Registration:** Requires @sesisenaipr.org.br email for registration.
+- **Social Networking:** Share posts, updates, and interact with other users.
+- **Teams Integration:** Previously utilized Teams API for verifying user existence within the school network (source code lost).
 
-Em 2023 comecei a desenvolver isso em NodeJS e React/Bootstrap, implementei registro de usuário chamando a API do MS Teams, verificando se o usuário existia no Registro do Colégio, se sim permitindo o registro.
+## Technology Stack
 
-Usei as APIs do Teams para baixar as fotos dos usuários e fazer uma bela tela de bem vindo, etc.
+- **Initial Implementation:** PHP (MVP)
+- **Current Implementation:** Reimplementation needed (originally migrated to Node.js, now requires PHP with MySQL)
+- **Database:** MySQL
+- **Requirements:** PHP, MySQL
 
-Mas como ja é conhecido: O próximo Facebook não virá do Brasil.
+## Getting Started
 
-Quando o desenvolvimento estava perto do fim fui completamente impedido de terminar e de lançar isso no colégio.
+To set up and run the application, follow these steps:
 
-Se isso tivesse lançado e por algum acaso tivesse saído na mídia (E eu tinha planos de fazer uma assessoria de imprensa), só seria bom para mim e para a instituição: "Alunos do colégio sesi criam rede social"; A opinião pública seria de que o colégio sesi forma alunos gênios, as matrículas aumentariam, etc, etc.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/felipeczpaz/CorreioSesi.git
+   cd CorreioSesi
+   ```
+   
+2. **Install Composer Dependencies:**
+   ```bash
+   composer install
+   ```
+   
+3. **Database Setup:**
+   - Create a MySQL database for Correio Sesi.
+   - Import the SQL schema and initial data from `DATABASE.sql`.
 
-Incrível que eu tive a ideia que ningúem naquele colegio teve a capacidade criativa ou intelectual de desenvolver e, enquanto eles deveriam me dar um prêmio, eles me descartaram como lixo.
+4. **Configure PHP:**
+   - Ensure PHP is installed and configured on your server or local environment.
+   - Create a .env file based on .env.example and configure necessary environment variables.
 
-Então resolvi refazer isso em PHP somente por motivos de portfolio e eles que se danem.
+5. **Run the application:**
+   - Deploy the PHP files to your web server or run locally using PHP's built-in server.
+
+6. **Access the application:**
+   - Open your web browser and navigate to `http://localhost/CorreioSesi` (or the appropriate URL).
+
+## Contributing
+
+Since the original Node.js implementation's source code is lost, contributions will involve reimplementing features in PHP. Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
